@@ -1,0 +1,90 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class CarSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('cars')->insert([
+            [
+                'make'=>'Mercedes-Benz',
+                'model_name'=>'GLA',
+                'model_year'=>2015,
+                'mileage'=>5000,
+                'availability'=>'A',
+                'category_id'=>2
+            ],
+            [
+                'make'=>'Honda',
+                'model_name'=>'Civic',
+                'model_year'=>2017,
+                'mileage'=>10000,
+                'availability'=>'A',
+                'category_id'=>1
+            ],
+            [
+                'make'=>'Ford',
+                'model_name'=>'Taurus',
+                'model_year'=>2018,
+                'mileage'=>6000,
+                'availability'=>'A',
+                'category_id'=>2
+            ],
+            [
+                'make'=>'Nissan',
+                'model_name'=>'Sentra',
+                'model_year'=>2015,
+                'mileage'=>8000,
+                'availability'=>'A',
+                'category_id'=>1
+            ],
+            [
+                'make'=>'Toyota',
+                'model_name'=>'Prado',
+                'model_year'=>2017,
+                'mileage'=>4000,
+                'availability'=>'A',
+                'category_id'=>2
+            ],
+            [
+                'make'=>'Subaru',
+                'model_name'=>'Impreza',
+                'model_year'=>2011,
+                'mileage'=>2000,
+                'availability'=>'N',
+                'category_id'=>2
+            ],
+            [
+                'make'=>'Hyundai',
+                'model_name'=>'Elantra',
+                'model_year'=>2016,
+                'mileage'=>12000,
+                'availability'=>'N',
+                'category_id'=>1
+            ],
+            [
+                'make'=>'Suzuki',
+                'model_name'=>'Vitara',
+                'model_year'=>2018,
+                'mileage'=>4000,
+                'availability'=>'N',
+                'category_id'=>2
+            ],
+            [
+                'make'=>'Toyota',
+                'model_name'=>'Yaris',
+                'model_year'=>2015,
+                'mileage'=>5000,
+                'availability'=>'A',
+                'category_id'=>1
+            ],
+        ]);
+    }
+}
